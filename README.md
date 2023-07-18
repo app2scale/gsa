@@ -48,6 +48,10 @@ If you want to know the details, please proceed.
   This is the benchmark application that we'll use to create the data in the manuscript. 
   For installation to Kubernetes, you can follow its documentation on GitHub. It is pretty straightforward. 
 
+  After the installation, don't forget to change the *teastore-webui* deployment so that 
+  it has *replicas*, *CATALINA_OPTS*, and *cpulimit* in the specifications. You can use the customized
+  YAML here *src/teastore/teastore-webui-deployment.yaml*.  
+
 - [HTTP-Load-Generator](https://github.com/joakimkistowski/HTTP-Load-Generator)
 
   This utility is to generate a constant load on TeaStore UI. 
